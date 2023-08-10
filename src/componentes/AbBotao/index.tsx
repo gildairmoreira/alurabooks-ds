@@ -1,12 +1,14 @@
 import React from "react";
 import styled, { css } from "styled-components";
 
-export interface AbBotaoProps {
+export interface AbBotaoProps
+{
     texto?: string
     tipo?: 'primario' | 'secundario'
     isBlock?: boolean
     onClick?: () => void
 }
+
 
 const BotaoEstilizado = styled.button<AbBotaoProps>`
     background: ${(props: AbBotaoProps) => props.tipo === 'primario' ? '#EB9B00' : '#FFF'};
@@ -16,7 +18,7 @@ const BotaoEstilizado = styled.button<AbBotaoProps>`
     width: ${(props: AbBotaoProps) => props.isBlock ? '100%' : 'auto'};
     font-size: 20px;
     cursor: pointer;
-    ${(props: AbBotaoProps) => props.tipo === 'primario' 
+    ${(props: AbBotaoProps) => props.tipo === 'primario'
         ? css`
             &:hover {
                 background: #B87900;
@@ -32,7 +34,8 @@ const BotaoEstilizado = styled.button<AbBotaoProps>`
         `
     }
 `
-export const AbBotao = ({ texto, onClick, tipo = 'primario', isBlock } : AbBotaoProps) => {
+export const AbBotao = ({ texto, onClick, tipo = 'primario', isBlock }: AbBotaoProps) =>
+{
     return (<BotaoEstilizado onClick={onClick} tipo={tipo} isBlock={isBlock}>
         {texto}
     </BotaoEstilizado>)
