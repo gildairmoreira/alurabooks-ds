@@ -35,16 +35,16 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "alurabooks-dsx",
+  "name": "alurabooks-dsg",
   "author": "gildair",
-  "module": "dist/alurabooks-dsx.esm.js",
+  "module": "dist/alurabooks-dsg.esm.js",
   "size-limit": [
     {
-      "path": "dist/alurabooks-dsx.cjs.production.min.js",
+      "path": "dist/alurabooks-dsg.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/alurabooks-dsx.esm.js",
+      "path": "dist/alurabooks-dsg.esm.js",
       "limit": "10 KB"
     }
   ],
